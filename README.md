@@ -3,11 +3,13 @@ Asyncronous require packages, install them, as a set
 
 ## Usage
 
-ensure = require('node-install-ensure');
+```javascript
+const ensure = require('node-install-ensure');
 
 ensure(['fs','async','sqlite3'],(err,[fs,async,sqlite3])=>{
  fs.createReadStream('/etc/hosts').pipe(process.stdout);
 });
+```
 
 ## Asynchronous
 
